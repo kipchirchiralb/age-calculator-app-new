@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="two.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <div class="input-group">
+          <label for="day-input">Day</label>
+          <input
+            type="number"
+            name="day-input"
+            id="day-input"
+            min="1"
+            max="31"
+          />
+        </div>
+        <div class="input-group">
+          <label for="month-input">Month</label>
+          <input
+            type="number"
+            name="month-input"
+            id="month-input"
+            min="1"
+            max="12"
+          />
+        </div>
+        <div class="input-group">
+          <label for="year-input">Year</label>
+          <input
+            type="number"
+            name="year-input"
+            id="year-input"
+            min="1"
+            max="2024"
+          />
+        </div>
+      </div>
+      <div id="error-div"></div>
+      <div class="line">
+        <hr />
+        <button id="calculate-results">
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <div class="results">
+        <p><span id="year-output">7</span> Years</p>
+        <p><span id="month-output">4</span> Months</p>
+        <p><span id="day-output">32</span> Days</p>
+      </div>
+    </div>
+    <script src="moment.js"></script>
+    <script src="two.js"></script>
+  </body>
+</html>

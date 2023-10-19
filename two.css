@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 86%);
+}
+.container {
+  width: 340px;
+  margin: 40px auto;
+  border-bottom-right-radius: 60px;
+  padding: 25px;
+  background-color: white;
+}
+.inputs {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+input {
+  width: 60px;
+  border-color: hsl(0, 0%, 86%);
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+}
+input:hover {
+  border-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+input:out-of-range {
+  border-color: hsl(0, 100%, 67%);
+}
+.error {
+  color: hsl(0, 100%, 67%);
+}
+
+label {
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+}
+.line {
+  display: flex;
+  align-items: center;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: hsl(0, 0%, 86%);
+}
+.line button {
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  padding: 5px;
+}
+.results p {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-style: italic;
+}
+.results span {
+  color: hsl(259, 100%, 65%);
+}
